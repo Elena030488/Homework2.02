@@ -30,11 +30,11 @@ public abstract class Hogwarts {
     public void setApparitionDistance(int apparitionDistance) {
         this.apparitionDistance = apparitionDistance;
     }
-
-    public void printStudent() {
-        System.out.print("Имя: " + getName() +
-                ", Мощность магии: "+ getWitchcraftPower() +
-                ", Расстояние трансгресси: " + getApparitionDistance());
+    @Override
+    public String toString() {
+        return "Имя: " + name +
+                ", Мощность магии: "+ witchcraftPower +
+                ", Расстояние трансгресси: " + apparitionDistance;
     }
     public void bestStudent(Hogwarts hogwarts) {
         int student1Power = this.getWitchcraftPower() + this.getApparitionDistance();

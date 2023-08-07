@@ -12,9 +12,11 @@ public class Main {
         Ravenclaw choChang = new Ravenclaw("Чжоу Чанг", 60, 70, 75, 70, 60, 65);
         Ravenclaw padmaPatil = new Ravenclaw("Падма Патил", 70, 75, 80, 75, 80, 75);
         Ravenclaw marcusBelby = new Ravenclaw("Маркус Белби", 60, 70, 70, 70, 60, 70);
-        harryPotter.printStudent();
-        hermioneGranger.printStudent();
-        padmaPatil.printStudent();
+        System.out.println(harryPotter);
+        System.out.println(hermioneGranger);
+        System.out.println(padmaPatil);
+        System.out.println(gregoryGoyle);
+        System.out.println(zachariasSmith);
         harryPotter.bestStudent(hermioneGranger);
         harryPotter.bestStudent(cedricDiggory);
         dracoMalfoy.bestStudent(harryPotter);

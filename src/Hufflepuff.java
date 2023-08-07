@@ -30,11 +30,12 @@ public class Hufflepuff extends Hogwarts {
     public void setLoyalty(int loyalty) {
         this.loyalty = loyalty;
     }
-    public void printStudent() {
-        super.printStudent();
-        System.out.println(", Трудолюбие: " + getDiligence() +
-                ", Верность: " + getLoyalty() +
-                ", Честность: " + getHonesty());
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", Трудолюбие: " + diligence +
+                ", Верность: " + loyalty +
+                ", Честность: " + honesty;
     }
     public void bestHufflepuffStudent(Hufflepuff hufflepuff) {
         int student1Power = this.getWitchcraftPower() + this.getApparitionDistance() + this.getDiligence() + this.getHonesty() + this.getLoyalty();

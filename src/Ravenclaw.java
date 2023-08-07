@@ -39,12 +39,13 @@ public class Ravenclaw extends Hogwarts {
     public void setCreativity(int creativity) {
         this.creativity = creativity;
     }
-    public void printStudent() {
-        super.printStudent();
-        System.out.println(", Ум: " + getIntelligence() +
-                ", Мудрость: " + getWisdom() +
-                ", Остроумие: " + getWit() +
-                ", Творчество: " + getCreativity());
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", Ум: " + intelligence +
+                ", Мудрость: " + wisdom +
+                ", Остроумие: " + wit +
+                ", Творчество: " + creativity;
     }
     public void bestRavenclawStudent(Ravenclaw ravenclaw) {
         int student1Power = this.getWitchcraftPower() + this.getApparitionDistance() + this.getIntelligence() + this.getWisdom() + this.getWit() + this.getCreativity();
